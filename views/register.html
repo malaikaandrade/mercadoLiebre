@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="css/styles.css" rel="stylesheet"> -->
+        <link href="css/register.css" rel="stylesheet">
+
+        <title>registro usuarios</title>
+
+    </head>
+    <body>
+        <form action="/home" method="POST">
+            
+            <label for="nombreApellido">Nombre y Apellido: </label>
+            <input type="text" name="nombreApellido" id="nombreApellido">
+
+            <label for="usuario">Usuario: </label>
+            <input type="email" name="usuario" id="usuario">
+
+            <label for="fecha">Fecha de nacimiento: </label>
+            <input type="date" name="fecha" id="fecha">
+
+            <label for="domicilio">Domicilio: </label>
+            <input type="text" name="domicilio" id="domicilio">
+
+            <label for="perfil">Perfil del usuario: </label>
+            <input type="radio" name="perfil" value="comprar">
+            Comprar
+            <input type="radio" name="perfil" value="vender">
+            Vender
+
+            <label for="interes">Categorías de interés: </label>
+            <input type="checkbox" name="interes" value="Electro">
+            Electro
+            <input type="checkbox" name="interes" value="Moda">
+            Moda
+            <input type="checkbox" name="interes" value="Hogar">
+            Hogar
+            <input type="checkbox" name="interes" value="Juguetería">
+            Juguetería
+            <input type="checkbox" name="interes" value="Vida sana">
+            Vida sana
+
+            <label for="FotoUsuario">Seleccionar una imagen para el perfil de usuario: </label>
+            <input type="file" name="FotoUsuario" accept=".jpg">
+
+            <label for="password">Digite su nueva contraseña: </label>
+            <input type="password" name="password" value="password">
+
+            <label for="password">Confirmar contraseña: </label>
+            <input type="password" name="password" value="password">
+
+            <button type="submit">ENVIAR</button>
+            <button type="reset">BORRAR</button>
+
+
+        </form>
+
+    </body>
+</html>
