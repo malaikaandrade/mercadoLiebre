@@ -13,29 +13,39 @@
   </head>
 
   <body>
+
     <header>
-      <div class="logo">    
-        <img id="logo" src="/img/logo-mercado-liebre.svg" alt="">
-      </div>
-      <div class="buscador">
-        <input type="search" name="fname" placeholder="Buscar productos, marcas">
-        <button><i class="fas fa-search"></i></button> 
-      </div>
-      <h4 class="sin-tarjeta"><i class="fas fa-shopping-cart"></i> Comprá en cuotas y sin tarjeta de crédito</h4>
-      <div class="comprar-coutas">
-        <ul type=none>
-          <li>Ofertas</li>
-          <li>Tiendas Oficiales</li>
-          <li>Vender</li>
-          <li>Ayuda</li>
-        </ul>
-        <ul type=none>
-          <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
-          <li><a href="/ingresar">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-          <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
-        </ul>
+      <div class="logo-buscador">
+        <div class="logo">    
+          <img id="logo" src="/img/logo-mercado-liebre.svg" alt="">
+        </div>
         
-    </div>
+        <form class="buscador">
+          <input class="search-bar" type="search" name="fname" placeholder="Buscar productos, marcas">
+          <button><i class="fas fa-search"></i></button> 
+        </form>
+        <div class="sin-tarjeta"><h4><i class="fas fa-shopping-cart"></i> Comprá en cuotas y sin tarjeta de crédito</h4></div>
+      </div>
+
+      <div class="lista-menu">
+        <div class="comprar-cuotas">
+          <ul type=none>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="registrar-ingresar">
+          <ul type=none>
+            <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+            <li><a href="/ingresar">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+          </ul>
+        </div>
+      </div>
+        
+    
     <button class="burger-menu"><i class="fas fa-bars"></i></button>
     </header>
     <div class="banner">
@@ -138,8 +148,8 @@
           <div class="caja-precio">
             <i class="fas fa-truck fa-flip-horizontal icono"></i>
             <div class="precio-descuento">
-              <div><p class="precio">$23.200</p></div>
-              <div><p class="descuento">5% OFF</p></div>
+              <div class="precio"><p>$23.200</p></div>
+              <div class="descuento"><p>5% OFF</p></div>
             </div>
             <p class="descripcion">SmartTv Samsung 43"</p>
           </div>

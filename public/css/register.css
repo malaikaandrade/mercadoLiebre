@@ -1,5 +1,38 @@
+*{
+    box-sizing: border-box;
+}
 body{
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor-formulario{
     font-weight: 900px;
     display: block;
-    color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(224, 220, 220);
+    padding: 25px;
+    text-align:inherit;
+    line-height: 30px;
+   
 }
+
+.botones{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    width: 80px;
+    padding: 7px;
+    margin-top: 15px;
+
+}
+
+.caja-blanca{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 7px;
+    margin-top: 10px;
+}
+

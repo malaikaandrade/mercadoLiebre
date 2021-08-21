@@ -11,29 +11,52 @@ img{
     width: 200px;
     height: 100px;
 }
-.logo{
-    margin-left: 35px;
+
+
+.logo-buscador{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 
 .buscador{
-    margin-left: 35px;
+    margin-top: 20px;
+    flex-grow: 1;
 }
+.logo{
+    flex-grow: 1;
+}
+
 .sin-tarjeta{
     margin: 20px;
     text-align: center;
+    font-size: 13px;
 }
 
 .banner{
     width: 100%;
     line-height: 0;
 }
-
-.comprar-coutas{
-    line-height: 20px;
-    font-size: 12px;
+.lista-menu {
     display: none;
 }
 
+.comprar-cuotas, .registrar-ingresar{
+    line-height: 20px;
+    font-size: 12px;
+}
+.registrar-ingresar a, .comprar-cuotas a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #1259c3;
+}
+/* CUANDO LE DES CLICK SE VISUALICE DE COLOR ROJO */
+a:active{
+    color: orangered;
+}
 ul{
     padding-left: 0px;
     font-weight: bolder;
@@ -87,6 +110,9 @@ ul#listaPie li{
     font-size: 2em; 
     margin-bottom: 15px;
 }
+.otra-clase:hover{
+    color: blueviolet;
+}
 
 #copyright{
     text-align: left;
@@ -127,8 +153,10 @@ main{
     position: relative;
     top: -26px;
     float: right;
-
 }
+
+
+
 .precio-descuento{
     display: flex;
     flex-direction: row;
@@ -157,18 +185,29 @@ main{
 
     .caja-imagen{
         
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
         width: 45%;
         justify-content: space-between;
+    }
+    .caja-imagen:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 2s;
+    }
+    .caja-imagen:hover .icono {
+        transform: rotate(-270deg);
+        transition: 2s;
+    }
+    .caja-imagen:hover .descripcion{
+        display: block;
+        transition: 2s;
     }
 }
 
 @media (min-width: 769px){
-    .descripcion{
-        display: block;
-    }
-    .comprar-coutas{
-        display: block;
+
+    .logo-buscador{
+        display: flex;
+        justify-content: space-around;
     }
     .burger-menu{
         display: none;
@@ -177,6 +216,37 @@ main{
         width: 23%;
         justify-content: space-between;
     }
+    .lista-menu {
+        display: flex;
+    
+    }
+    .registrar-ingresar {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        
+    }
+    .registrar-ingresar ul {
+        display: flex;
+    }
+    .registrar-ingresar li{
+        margin: 20px;
 
+    }
+    .comprar-cuotas{
+        display:flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    .comprar-cuotas ul {
+        display: flex;
+    }
+    .comprar-cuotas li {
+        margin: 20px;
 
+    }
 }
+    
+    
+
+
