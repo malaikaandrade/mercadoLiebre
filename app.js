@@ -21,4 +21,7 @@ app.get('/ingresar', (req, res) =>{
     res.sendFile(path.resolve('./views/ingresar.html'));
 });
 
-app.listen (3000, () => console.log('Server running at port 3000'));
+let port = process.env.PORT || 3000
+app.listen (port, () => {
+    console.log('Server running');
+});
